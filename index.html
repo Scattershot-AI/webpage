@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IDOR Agent — Automated Vulnerability Detection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Scattershot AI<span class="cursor"></span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <hr class="divider">
+
+  <div class="hero">
+    <div class="hero-tag">Scattershot AI</div>
+    <h1>Autonomous<br><span class="highlight">IDOR</span><br>Pentesting</h1>
+    <p class="hero-desc">
+      A multi-agent LLM framework that automates the full pipeline of hypothesis generation, testing, and exploitation of Insecure Direct Object Reference vulnerabilities in web applications.
+    </p>
+  </div>
+  <hr class="divider">
+
+  <section id="about">
+    <div class="section-label">Background</div>
+    <h2>The most critical<br>web security risk</h2>
+    <p class="section-body">
+      Broken access control — the vulnerability family that IDORs belong to — is ranked #1 on the OWASP Top 10. Despite this, automated detection has remained largely rule-based and shallow. We set out to change that with agents that reason like a skilled pentester.
+    </p>
+    <p class="section-body" style="margin-top:1.5rem;">
+      Our framework chains multiple LLM-powered agents across the full vulnerability lifecycle: from reconnaissance and hypothesis generation all the way through exploitation and reporting.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section id="approach">
+    <div class="section-label">Methodology</div>
+    <div class="approach-grid">
+      <div>
+        <h2>Built to think,<br>not just scan.</h2>
+        <p class="section-body">
+          Each agent leverages bleeding-edge LLM agent technologies and techniques to reason through the vulnerability pipeline rather than execute hardcoded rules.
+        </p>
+      </div>
+      <div>
+        <div class="terminal">
+          <span class="t-dim"># framework execution trace</span><br>
+          <span class="t-green">✓</span> recon_agent        <span class="t-dim">→ 12 endpoints mapped</span><br>
+          <span class="t-green">✓</span> hypothesis_agent   <span class="t-dim">→ 4 candidates generated</span><br>
+          <span class="t-green">✓</span> priority_agent     <span class="t-dim">→ ranked by exploitability</span><br>
+          <span class="t-green">✓</span> exploit_agent      <span class="t-dim">→ testing /api/user/[id]</span><br>
+          <span class="t-red">!</span> exploit_agent      <span class="t-dim">→ IDOR confirmed</span><br>
+          <span class="t-green">✓</span> verify_agent       <span class="t-dim">→ cross-user data exposed</span><br>
+          <span class="t-green">✓</span> escalation_agent   <span class="t-dim">→ no further chain found</span><br>
+          <span class="t-green">✓</span> report_agent       <span class="t-dim">→ report generated</span><br>
+          <br>
+          <span class="t-dim">severity: HIGH | cvss: 8.1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-section" id="contact">
+    <div class="section-label" style="justify-content:center;">Get in touch</div>
+    <h2>Interested?</h2>
+    <p>We're actively developing this into a full security testing product. Reach out if you're a security team, researcher, or investor.</p>
+    <p style="font-family: var(--mono); font-size: 0.85rem; color: var(--accent);">email: operations[at]scattershot[dot]ai</p>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Scattershot AI. All rights reserved.</p>
+    <div class="footer-badge">RESEARCH</div>
+  </footer>
+
+</body>
+</html>
