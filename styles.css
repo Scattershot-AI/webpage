@@ -2,7 +2,7 @@
     --bg: #0a0a0a;
     --surface: #111111;
     --border: #222;
-    --accent: #00ff88;
+    --accent: #b47cff;
     --accent2: #ff3c3c;
     --text: #e8e8e8;
     --muted: #666;
@@ -122,7 +122,7 @@ nav {
 
 h1 {
     font-family: var(--sans);
-    font-size: clamp(3rem, 8vw, 7rem);
+    font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 800;
     line-height: 0.95;
     letter-spacing: -0.03em;
@@ -131,10 +131,11 @@ h1 {
     animation: fadeUp 0.7s 0.2s forwards;
 }
 
+h1 {
+    color: #cfcfcf;
+}
 h1 .highlight {
     color: var(--accent);
-    position: relative;
-    display: inline-block;
 }
 
 h1 .highlight::after {
